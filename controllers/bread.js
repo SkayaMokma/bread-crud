@@ -11,8 +11,9 @@ router.get('/', (req, res) => {
 // GET bread by
 router.get('/:index', (req, res) => {
     const { index } = req.params
-    res.send(Bread[index])
+    res.render('show', {
+        bread: Bread[index]
+    })
 })
-
 
 module.exports = router
