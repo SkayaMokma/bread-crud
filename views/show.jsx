@@ -23,7 +23,6 @@ function Show({ bread, index }) {
                 <a href={'/breads'}>Go home</a>
             </li>
         </Default>
-    )
-}
+    )}
 
 module.exports = Show
