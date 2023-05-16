@@ -16,6 +16,9 @@ function Show ({ baker }) {
           <ul>
             {breadDisplay}
           </ul>
+          <form action={`/baker/${baker.id}?_method=DELETE`} method='POST'>
+                <input type='submit' value='DELETE'/>
+            </form>
       </Default>
     )
 }
